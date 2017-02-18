@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N6E-FB-scB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Connect View Controller-->
+        <scene sceneID="9iz-T4-dJJ">
+            <objects>
+                <viewController id="N6E-FB-scB" customClass="BTConnectViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZOz-Cf-AHS"/>
+                        <viewControllerLayoutGuide type="bottom" id="WbA-bx-qDE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o74-Ui-SaA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="49l-5e-4AN">
+                                <rect key="frame" x="0.0" y="258" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NXT Bluetooth Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQC-g7-bMh">
+                                        <rect key="frame" x="62" y="11" width="250" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00165311C2CD" borderStyle="roundedRect" textAlignment="center" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="gew-4z-PyX">
+                                        <rect key="frame" x="87.5" y="60" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="H7v-E0-kEa"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCg-Tz-czN">
+                                        <rect key="frame" x="141.5" y="110" width="91" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Connect"/>
+                                        <connections>
+                                            <action selector="connectButtonClicked:" destination="N6E-FB-scB" eventType="touchUpInside" id="bcV-Sd-naq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="gew-4z-PyX" firstAttribute="centerX" secondItem="49l-5e-4AN" secondAttribute="centerX" id="3Ga-96-XFL"/>
+                                    <constraint firstAttribute="height" constant="150" id="LTo-i0-L5r"/>
+                                    <constraint firstItem="gew-4z-PyX" firstAttribute="top" secondItem="PQC-g7-bMh" secondAttribute="bottom" constant="20" id="Py6-8f-th2"/>
+                                    <constraint firstItem="PQC-g7-bMh" firstAttribute="centerX" secondItem="49l-5e-4AN" secondAttribute="centerX" id="R1c-ea-3o2"/>
+                                    <constraint firstItem="gew-4z-PyX" firstAttribute="centerY" secondItem="49l-5e-4AN" secondAttribute="centerY" id="Tr2-rd-QTn"/>
+                                    <constraint firstItem="qCg-Tz-czN" firstAttribute="top" secondItem="gew-4z-PyX" secondAttribute="bottom" constant="20" id="lM5-vo-ZbJ"/>
+                                    <constraint firstItem="qCg-Tz-czN" firstAttribute="centerX" secondItem="49l-5e-4AN" secondAttribute="centerX" id="nwI-oS-33o"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lj0-PG-TuQ">
+                                <rect key="frame" x="119.5" y="626" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="49l-5e-4AN" secondAttribute="trailing" id="E1h-29-Rls"/>
+                            <constraint firstItem="WbA-bx-qDE" firstAttribute="top" secondItem="lj0-PG-TuQ" secondAttribute="bottom" constant="20" id="Ic3-AA-2rY"/>
+                            <constraint firstItem="49l-5e-4AN" firstAttribute="leading" secondItem="o74-Ui-SaA" secondAttribute="leading" id="c2X-ph-iGW"/>
+                            <constraint firstItem="lj0-PG-TuQ" firstAttribute="centerX" secondItem="o74-Ui-SaA" secondAttribute="centerX" id="eoV-wf-9N5"/>
+                            <constraint firstItem="49l-5e-4AN" firstAttribute="centerY" secondItem="o74-Ui-SaA" secondAttribute="centerY" id="tU1-fb-6ou"/>
+                            <constraint firstItem="49l-5e-4AN" firstAttribute="centerX" secondItem="o74-Ui-SaA" secondAttribute="centerX" id="zFR-0e-MIk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressTextField" destination="gew-4z-PyX" id="QYu-Qt-77F"/>
+                        <outlet property="connectButton" destination="qCg-Tz-czN" id="yYX-Qu-dfR"/>
+                        <outlet property="statusLabel" destination="lj0-PG-TuQ" id="J8Y-yB-5PB"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="goToScan" id="qV6-Cb-sc4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zVB-j8-TBc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-762.39999999999998" y="129.98500749625188"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ScanViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iaP-RW-yMg" userLabel="Video View">
+                                <rect key="frame" x="0.0" y="84" width="375" height="500"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iaP-RW-yMg" secondAttribute="height" multiplier="3:4" id="3FX-3W-2NE"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="kbJ-KI-39V" appends="YES" id="bgM-Mi-qBs"/>
+                                    <outletCollection property="gestureRecognizers" destination="KrB-Nu-Ot4" appends="YES" id="snZ-L4-PaF"/>
+                                </connections>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ug2-lX-mFv" userLabel="Cube Color View">
+                                <rect key="frame" x="16" y="30" width="120" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="66m-qo-uXX"/>
+                                    <constraint firstAttribute="width" constant="120" id="SLb-Ic-vre"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iaP-RW-yMg" secondAttribute="trailing" id="CV6-ae-6Be"/>
+                            <constraint firstItem="iaP-RW-yMg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G3N-ew-3PX"/>
+                            <constraint firstItem="iaP-RW-yMg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GoD-E3-Gm5"/>
+                            <constraint firstItem="ug2-lX-mFv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="Ipp-4S-Hie"/>
+                            <constraint firstItem="iaP-RW-yMg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="LXX-kp-MIc"/>
+                            <constraint firstItem="ug2-lX-mFv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qrK-X5-QTE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cubeColorView" destination="ug2-lX-mFv" id="QSG-0I-hKR"/>
+                        <outlet property="videoView" destination="iaP-RW-yMg" id="hZu-0N-kbK"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="dk1-Pp-Abd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="kbJ-KI-39V">
+                    <connections>
+                        <action selector="pickupColorsWhenTap:" destination="BYZ-38-t0r" id="71P-Pi-PfK"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="KrB-Nu-Ot4">
+                    <connections>
+                        <action selector="changePreviewWhenTap:" destination="BYZ-38-t0r" id="Q3q-0e-RKG"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>

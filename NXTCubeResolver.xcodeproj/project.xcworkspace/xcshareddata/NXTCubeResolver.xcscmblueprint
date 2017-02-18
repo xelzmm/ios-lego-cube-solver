@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8FE8CD9D3CA6CEA7BE24B0D2ABBDFAED7AB06611",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8FE8CD9D3CA6CEA7BE24B0D2ABBDFAED7AB06611" : 9223372036854775807,
+    "3661FD43AB295670E29F9873419559E0CCCC6C1C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9EDA04CF-4173-44B2-942A-D04C5ACD750F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8FE8CD9D3CA6CEA7BE24B0D2ABBDFAED7AB06611" : "NXTCubeResolver\/",
+    "3661FD43AB295670E29F9873419559E0CCCC6C1C" : "..\/tools\/ios\/btstack"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NXTCubeResolver",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NXTCubeResolver.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bluekitchen\/btstack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3661FD43AB295670E29F9873419559E0CCCC6C1C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/xelz.h4ck.me:10022\/~\/work\/space\/xcode_projects\/NXTCubeResolver",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8FE8CD9D3CA6CEA7BE24B0D2ABBDFAED7AB06611"
+    }
+  ]
+}

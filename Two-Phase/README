@@ -1,0 +1,61 @@
+A cube solving program.  This program is iterative and will ultimately
+get the best solution.  Early termination will get worse solution (although
+it is not known whether those solutions are indeed not best).  The file
+Description contains a number of messages I mailed to the cube-lovers
+mailing list.  From that you can get some information about the way the
+program works.
+
+Requirements: much memory.  Normally the program requires about 2.5 MByte,
+when compiled with -DLARGE_MEM it requires about 11 MByte.  But in the
+latter case the program is much faster (compare: small program a few
+seconds initialization, but upto 30 minutes to find a reasonable solution,
+large program 2.5 minutes initialization, but that reasonable solution is
+found in a few seconds!, and a better solution takes about 15 minutes.)
+
+The entry of the cube is abismal.  See cube.c.  (The cube is entered by
+giving the moves to get at the configuration from stdin, "-t" option.)
+
+This version also allows giving a pattern as input ("-p" option).
+Again, see cube.c.
+
+This is not a final product.
+
+The algorithm used is based on an algorithm described by Herbert Kociemba
+from Darmstadt.
+
+Comments/remarks to me please.
+--
+As addons you can make:
+size222		which will calculate the maximal pathlengths for the 2x2x2 cube.
+size333c	which will calculate the maximal pathlengths to solve corner
+		cubes only on the 3x3x3.
+sizesquare	which will calculate the maximal pathlengths to solve the
+		square group on the 3x3x3 cube.
+sizedom		which will calculate the maximal pathlengths to solve the
+		magic domino.  Give the parameter -1, -4 or -8 whether you
+		want to allow 1, 2 or 8 solutions.
+sizekoc1	which will calculate the maximal pathlengths to solve phase 1
+		of Kociemba's algorithm.
+sizekoc2	which will calculate the maximal pathlengths to solve phase 2
+		of Kociemba's algorithm.
+All except sizesquare, sizekoc1 and sizekoc2 allow the flag -q.  When given
+half turns are ignored (for the domino only on the U and D face).
+
+size222 requires less than 1 MB, size333c less than 4 MB, sizedom more than
+32 MB, sizesquare 2.5 MB, sizekoc1 requires about 80 MB and sizekoc2 about
+410 MB.
+
+The subdirectory trans contains include files related to transitions.  You
+can have a look through it.  Most files have been tested, and are found to
+be correct for the cases tested.  The following have not been tested, and
+are thought to be correct ;-).
+	perm10.a perm11.a perm12.a perm3.a perm5.a perm6.a perm9.a sperm.m
+	sperm.r
+Some of them will be tested subsequently.
+
+The file RESULTS contains results from the size programs (not yet from the
+program sizekoc1).  Timings are for a FPS 500 for size222 and size333c,
+for a SGI 4D-420S for sizedom.
+--
+dik t. winter, cwi, kruislaan 413, 1098 sj  amsterdam, nederland
+dik@cwi.nl

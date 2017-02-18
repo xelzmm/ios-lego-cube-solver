@@ -1,0 +1,972 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3755C69C1E4EE66200ABF52E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3755C69B1E4EE66200ABF52E /* main.m */; };
+		3755C69F1E4EE66200ABF52E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3755C69E1E4EE66200ABF52E /* AppDelegate.m */; };
+		3755C6A21E4EE66200ABF52E /* ScanViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3755C6A11E4EE66200ABF52E /* ScanViewController.mm */; };
+		3755C6A51E4EE66200ABF52E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3755C6A31E4EE66200ABF52E /* Main.storyboard */; };
+		3755C6A71E4EE66200ABF52E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3755C6A61E4EE66200ABF52E /* Assets.xcassets */; };
+		3755C6AA1E4EE66200ABF52E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3755C6A81E4EE66200ABF52E /* LaunchScreen.storyboard */; };
+		3755C6B51E4EE66200ABF52E /* NXTCubeResolverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3755C6B41E4EE66200ABF52E /* NXTCubeResolverTests.m */; };
+		3755C6C01E4EE66200ABF52E /* NXTCubeResolverUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3755C6BF1E4EE66200ABF52E /* NXTCubeResolverUITests.m */; };
+		3755C74B1E4EECB600ABF52E /* cube.c in Sources */ = {isa = PBXBuildFile; fileRef = 3755C7321E4EECB600ABF52E /* cube.c */; };
+		3755C74C1E4EECB600ABF52E /* globals.c in Sources */ = {isa = PBXBuildFile; fileRef = 3755C7361E4EECB600ABF52E /* globals.c */; };
+		3755C74D1E4EECB600ABF52E /* permcube.c in Sources */ = {isa = PBXBuildFile; fileRef = 3755C73E1E4EECB600ABF52E /* permcube.c */; };
+		3755C74E1E4EECB600ABF52E /* phase1.c in Sources */ = {isa = PBXBuildFile; fileRef = 3755C7401E4EECB600ABF52E /* phase1.c */; };
+		3755C74F1E4EECB600ABF52E /* phase2.c in Sources */ = {isa = PBXBuildFile; fileRef = 3755C7421E4EECB600ABF52E /* phase2.c */; };
+		3755C7501E4EECB600ABF52E /* prntsol.c in Sources */ = {isa = PBXBuildFile; fileRef = 3755C7441E4EECB600ABF52E /* prntsol.c */; };
+		3755C7511E4EECB600ABF52E /* setcube.c in Sources */ = {isa = PBXBuildFile; fileRef = 3755C7471E4EECB600ABF52E /* setcube.c */; };
+		3755C7541E4F67D900ABF52E /* libTwo-Phase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3755C7271E4EECAE00ABF52E /* libTwo-Phase.a */; };
+		3790168E1E54C5CA003684F2 /* BTDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3790168D1E54C5CA003684F2 /* BTDevice.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		379016911E57535D003684F2 /* BTConnectViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 379016901E57535D003684F2 /* BTConnectViewController.mm */; };
+		379016921E5765E5003684F2 /* BTstackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D299901E54B76200580BC2 /* BTstackManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		379016931E57661D003684F2 /* BTDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 3790168D1E54C5CA003684F2 /* BTDevice.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		379016941E57662E003684F2 /* libBTstack.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D299941E54B77C00580BC2 /* libBTstack.dylib */; };
+		379016991E576B23003684F2 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 379016981E576B23003684F2 /* Util.m */; };
+		379F9A451E4F6A6800A7AD3E /* libTwo-Phase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3755C7271E4EECAE00ABF52E /* libTwo-Phase.a */; };
+		379F9A4A1E4F79C100A7AD3E /* squares.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 379F9A481E4F79C100A7AD3E /* squares.cpp */; };
+		379F9A4C1E4F7A0600A7AD3E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379F9A4B1E4F7A0600A7AD3E /* opencv2.framework */; };
+		379F9A4F1E4F7EB800A7AD3E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379F9A4E1E4F7EB800A7AD3E /* AVFoundation.framework */; };
+		379F9A511E4F7ED300A7AD3E /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379F9A501E4F7ED300A7AD3E /* CoreMedia.framework */; };
+		379F9A531E4F7EE300A7AD3E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379F9A521E4F7EE300A7AD3E /* AssetsLibrary.framework */; };
+		37D2997C1E54B60500580BC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D2997B1E54B60500580BC2 /* main.m */; };
+		37D2997F1E54B60500580BC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D2997E1E54B60500580BC2 /* AppDelegate.m */; };
+		37D299821E54B60500580BC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D299811E54B60500580BC2 /* ViewController.m */; };
+		37D299851E54B60500580BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D299831E54B60500580BC2 /* Main.storyboard */; };
+		37D299871E54B60500580BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37D299861E54B60500580BC2 /* Assets.xcassets */; };
+		37D2998A1E54B60500580BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D299881E54B60500580BC2 /* LaunchScreen.storyboard */; };
+		37D299921E54B76200580BC2 /* BTstackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D299901E54B76200580BC2 /* BTstackManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		37D299951E54B77C00580BC2 /* libBTstack.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 37D299941E54B77C00580BC2 /* libBTstack.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3755C6BC1E4EE66200ABF52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3755C68F1E4EE66200ABF52E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3755C6961E4EE66200ABF52E;
+			remoteInfo = NXTCubeResolver;
+		};
+		379F9A431E4F6A5800A7AD3E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3755C68F1E4EE66200ABF52E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3755C6961E4EE66200ABF52E;
+			remoteInfo = NXTCubeResolver;
+		};
+		37FA38A61E51D94600560013 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3755C68F1E4EE66200ABF52E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3755C7261E4EECAE00ABF52E;
+			remoteInfo = "Two-Phase";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3755C7251E4EECAE00ABF52E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3755C6971E4EE66200ABF52E /* NXTCubeResolver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NXTCubeResolver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3755C69B1E4EE66200ABF52E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3755C69D1E4EE66200ABF52E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3755C69E1E4EE66200ABF52E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3755C6A01E4EE66200ABF52E /* ScanViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		3755C6A11E4EE66200ABF52E /* ScanViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ScanViewController.mm; sourceTree = "<group>"; };
+		3755C6A41E4EE66200ABF52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3755C6A61E4EE66200ABF52E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3755C6A91E4EE66200ABF52E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3755C6AB1E4EE66200ABF52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3755C6B01E4EE66200ABF52E /* NXTCubeResolverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NXTCubeResolverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3755C6B41E4EE66200ABF52E /* NXTCubeResolverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXTCubeResolverTests.m; sourceTree = "<group>"; };
+		3755C6B61E4EE66200ABF52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3755C6BB1E4EE66200ABF52E /* NXTCubeResolverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NXTCubeResolverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3755C6BF1E4EE66200ABF52E /* NXTCubeResolverUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NXTCubeResolverUITests.m; sourceTree = "<group>"; };
+		3755C6C11E4EE66200ABF52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3755C7271E4EECAE00ABF52E /* libTwo-Phase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libTwo-Phase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3755C7301E4EECB600ABF52E /* choice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = choice.h; sourceTree = "<group>"; };
+		3755C7311E4EECB600ABF52E /* cperm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cperm.h; sourceTree = "<group>"; };
+		3755C7321E4EECB600ABF52E /* cube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cube.c; sourceTree = "<group>"; };
+		3755C7331E4EECB600ABF52E /* cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cube.h; sourceTree = "<group>"; };
+		3755C7341E4EECB600ABF52E /* eperm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = eperm.h; sourceTree = "<group>"; };
+		3755C7351E4EECB600ABF52E /* flip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flip.h; sourceTree = "<group>"; };
+		3755C7361E4EECB600ABF52E /* globals.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = globals.c; sourceTree = "<group>"; };
+		3755C7371E4EECB600ABF52E /* globals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = globals.h; sourceTree = "<group>"; };
+		3755C7381E4EECB600ABF52E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
+		3755C7391E4EECB600ABF52E /* longtype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = longtype.h; sourceTree = "<group>"; };
+		3755C73A1E4EECB600ABF52E /* mixed1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mixed1.h; sourceTree = "<group>"; };
+		3755C73B1E4EECB600ABF52E /* mixed2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mixed2.h; sourceTree = "<group>"; };
+		3755C73C1E4EECB600ABF52E /* perm4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perm4.h; sourceTree = "<group>"; };
+		3755C73D1E4EECB600ABF52E /* perm8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = perm8.h; sourceTree = "<group>"; };
+		3755C73E1E4EECB600ABF52E /* permcube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = permcube.c; sourceTree = "<group>"; };
+		3755C73F1E4EECB600ABF52E /* permcube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = permcube.h; sourceTree = "<group>"; };
+		3755C7401E4EECB600ABF52E /* phase1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = phase1.c; sourceTree = "<group>"; };
+		3755C7411E4EECB600ABF52E /* phase1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phase1.h; sourceTree = "<group>"; };
+		3755C7421E4EECB600ABF52E /* phase2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = phase2.c; sourceTree = "<group>"; };
+		3755C7431E4EECB600ABF52E /* phase2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phase2.h; sourceTree = "<group>"; };
+		3755C7441E4EECB600ABF52E /* prntsol.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prntsol.c; sourceTree = "<group>"; };
+		3755C7451E4EECB600ABF52E /* prntsol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prntsol.h; sourceTree = "<group>"; };
+		3755C7461E4EECB600ABF52E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		3755C7471E4EECB600ABF52E /* setcube.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = setcube.c; sourceTree = "<group>"; };
+		3755C7481E4EECB600ABF52E /* setcube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = setcube.h; sourceTree = "<group>"; };
+		3755C7491E4EECB600ABF52E /* sperm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sperm.h; sourceTree = "<group>"; };
+		3755C74A1E4EECB600ABF52E /* twist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twist.h; sourceTree = "<group>"; };
+		3790168B1E54C59B003684F2 /* BTstackManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTstackManager.h; sourceTree = "<group>"; };
+		3790168C1E54C5C4003684F2 /* BTDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTDevice.h; sourceTree = "<group>"; };
+		3790168D1E54C5CA003684F2 /* BTDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDevice.m; sourceTree = "<group>"; };
+		3790168F1E57535D003684F2 /* BTConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTConnectViewController.h; sourceTree = "<group>"; };
+		379016901E57535D003684F2 /* BTConnectViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BTConnectViewController.mm; sourceTree = "<group>"; };
+		379016971E576B23003684F2 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		379016981E576B23003684F2 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		379F9A481E4F79C100A7AD3E /* squares.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = squares.cpp; sourceTree = "<group>"; };
+		379F9A491E4F79C100A7AD3E /* squares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = squares.h; sourceTree = "<group>"; };
+		379F9A4B1E4F7A0600A7AD3E /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		379F9A4E1E4F7EB800A7AD3E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		379F9A501E4F7ED300A7AD3E /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		379F9A521E4F7EE300A7AD3E /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		37D299781E54B60500580BC2 /* BTStackTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTStackTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37D2997B1E54B60500580BC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		37D2997D1E54B60500580BC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		37D2997E1E54B60500580BC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		37D299801E54B60500580BC2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		37D299811E54B60500580BC2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		37D299841E54B60500580BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37D299861E54B60500580BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37D299891E54B60500580BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37D2998B1E54B60500580BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37D299901E54B76200580BC2 /* BTstackManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTstackManager.m; sourceTree = "<group>"; };
+		37D299931E54B76E00580BC2 /* btstack-config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "btstack-config.h"; sourceTree = "<group>"; };
+		37D299941E54B77C00580BC2 /* libBTstack.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libBTstack.dylib; sourceTree = "<group>"; };
+		37FA389B1E51D3E900560013 /* libBTstack.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libBTstack.dylib; path = ../../tools/ios/btstack/port/ios/.theos/obj/debug/libBTstack.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3755C6941E4EE66200ABF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379F9A531E4F7EE300A7AD3E /* AssetsLibrary.framework in Frameworks */,
+				379F9A511E4F7ED300A7AD3E /* CoreMedia.framework in Frameworks */,
+				379F9A4F1E4F7EB800A7AD3E /* AVFoundation.framework in Frameworks */,
+				379F9A4C1E4F7A0600A7AD3E /* opencv2.framework in Frameworks */,
+				379016941E57662E003684F2 /* libBTstack.dylib in Frameworks */,
+				3755C7541E4F67D900ABF52E /* libTwo-Phase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3755C6AD1E4EE66200ABF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379F9A451E4F6A6800A7AD3E /* libTwo-Phase.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3755C6B81E4EE66200ABF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3755C7241E4EECAE00ABF52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D299751E54B60500580BC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D299951E54B77C00580BC2 /* libBTstack.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3755C68E1E4EE66200ABF52E = {
+			isa = PBXGroup;
+			children = (
+				3755C6991E4EE66200ABF52E /* NXTCubeResolver */,
+				3755C6B31E4EE66200ABF52E /* NXTCubeResolverTests */,
+				3755C6BE1E4EE66200ABF52E /* NXTCubeResolverUITests */,
+				3755C7281E4EECAE00ABF52E /* Two-Phase */,
+				37D299791E54B60500580BC2 /* BTStackTest */,
+				3755C6981E4EE66200ABF52E /* Products */,
+				379F9A4D1E4F7EB800A7AD3E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3755C6981E4EE66200ABF52E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3755C6971E4EE66200ABF52E /* NXTCubeResolver.app */,
+				3755C6B01E4EE66200ABF52E /* NXTCubeResolverTests.xctest */,
+				3755C6BB1E4EE66200ABF52E /* NXTCubeResolverUITests.xctest */,
+				3755C7271E4EECAE00ABF52E /* libTwo-Phase.a */,
+				37D299781E54B60500580BC2 /* BTStackTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3755C6991E4EE66200ABF52E /* NXTCubeResolver */ = {
+			isa = PBXGroup;
+			children = (
+				379F9A4B1E4F7A0600A7AD3E /* opencv2.framework */,
+				3755C69D1E4EE66200ABF52E /* AppDelegate.h */,
+				3755C69E1E4EE66200ABF52E /* AppDelegate.m */,
+				3755C6A01E4EE66200ABF52E /* ScanViewController.h */,
+				3755C6A11E4EE66200ABF52E /* ScanViewController.mm */,
+				379F9A491E4F79C100A7AD3E /* squares.h */,
+				379F9A481E4F79C100A7AD3E /* squares.cpp */,
+				3755C6A31E4EE66200ABF52E /* Main.storyboard */,
+				3790168F1E57535D003684F2 /* BTConnectViewController.h */,
+				379016901E57535D003684F2 /* BTConnectViewController.mm */,
+				379016971E576B23003684F2 /* Util.h */,
+				379016981E576B23003684F2 /* Util.m */,
+				3755C6A61E4EE66200ABF52E /* Assets.xcassets */,
+				3755C6A81E4EE66200ABF52E /* LaunchScreen.storyboard */,
+				3755C6AB1E4EE66200ABF52E /* Info.plist */,
+				3755C69A1E4EE66200ABF52E /* Supporting Files */,
+			);
+			path = NXTCubeResolver;
+			sourceTree = "<group>";
+		};
+		3755C69A1E4EE66200ABF52E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3755C69B1E4EE66200ABF52E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3755C6B31E4EE66200ABF52E /* NXTCubeResolverTests */ = {
+			isa = PBXGroup;
+			children = (
+				3755C6B41E4EE66200ABF52E /* NXTCubeResolverTests.m */,
+				3755C6B61E4EE66200ABF52E /* Info.plist */,
+			);
+			path = NXTCubeResolverTests;
+			sourceTree = "<group>";
+		};
+		3755C6BE1E4EE66200ABF52E /* NXTCubeResolverUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3755C6BF1E4EE66200ABF52E /* NXTCubeResolverUITests.m */,
+				3755C6C11E4EE66200ABF52E /* Info.plist */,
+			);
+			path = NXTCubeResolverUITests;
+			sourceTree = "<group>";
+		};
+		3755C7281E4EECAE00ABF52E /* Two-Phase */ = {
+			isa = PBXGroup;
+			children = (
+				3755C7301E4EECB600ABF52E /* choice.h */,
+				3755C7311E4EECB600ABF52E /* cperm.h */,
+				3755C7321E4EECB600ABF52E /* cube.c */,
+				3755C7331E4EECB600ABF52E /* cube.h */,
+				3755C7341E4EECB600ABF52E /* eperm.h */,
+				3755C7351E4EECB600ABF52E /* flip.h */,
+				3755C7361E4EECB600ABF52E /* globals.c */,
+				3755C7371E4EECB600ABF52E /* globals.h */,
+				3755C7381E4EECB600ABF52E /* license.txt */,
+				3755C7391E4EECB600ABF52E /* longtype.h */,
+				3755C73A1E4EECB600ABF52E /* mixed1.h */,
+				3755C73B1E4EECB600ABF52E /* mixed2.h */,
+				3755C73C1E4EECB600ABF52E /* perm4.h */,
+				3755C73D1E4EECB600ABF52E /* perm8.h */,
+				3755C73E1E4EECB600ABF52E /* permcube.c */,
+				3755C73F1E4EECB600ABF52E /* permcube.h */,
+				3755C7401E4EECB600ABF52E /* phase1.c */,
+				3755C7411E4EECB600ABF52E /* phase1.h */,
+				3755C7421E4EECB600ABF52E /* phase2.c */,
+				3755C7431E4EECB600ABF52E /* phase2.h */,
+				3755C7441E4EECB600ABF52E /* prntsol.c */,
+				3755C7451E4EECB600ABF52E /* prntsol.h */,
+				3755C7461E4EECB600ABF52E /* README */,
+				3755C7471E4EECB600ABF52E /* setcube.c */,
+				3755C7481E4EECB600ABF52E /* setcube.h */,
+				3755C7491E4EECB600ABF52E /* sperm.h */,
+				3755C74A1E4EECB600ABF52E /* twist.h */,
+			);
+			path = "Two-Phase";
+			sourceTree = "<group>";
+		};
+		379F9A4D1E4F7EB800A7AD3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37FA389B1E51D3E900560013 /* libBTstack.dylib */,
+				379F9A521E4F7EE300A7AD3E /* AssetsLibrary.framework */,
+				379F9A501E4F7ED300A7AD3E /* CoreMedia.framework */,
+				379F9A4E1E4F7EB800A7AD3E /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37D299791E54B60500580BC2 /* BTStackTest */ = {
+			isa = PBXGroup;
+			children = (
+				37D299941E54B77C00580BC2 /* libBTstack.dylib */,
+				37D299931E54B76E00580BC2 /* btstack-config.h */,
+				3790168C1E54C5C4003684F2 /* BTDevice.h */,
+				3790168D1E54C5CA003684F2 /* BTDevice.m */,
+				3790168B1E54C59B003684F2 /* BTstackManager.h */,
+				37D299901E54B76200580BC2 /* BTstackManager.m */,
+				37D2997D1E54B60500580BC2 /* AppDelegate.h */,
+				37D2997E1E54B60500580BC2 /* AppDelegate.m */,
+				37D299801E54B60500580BC2 /* ViewController.h */,
+				37D299811E54B60500580BC2 /* ViewController.m */,
+				37D299831E54B60500580BC2 /* Main.storyboard */,
+				37D299861E54B60500580BC2 /* Assets.xcassets */,
+				37D299881E54B60500580BC2 /* LaunchScreen.storyboard */,
+				37D2998B1E54B60500580BC2 /* Info.plist */,
+				37D2997A1E54B60500580BC2 /* Supporting Files */,
+			);
+			path = BTStackTest;
+			sourceTree = "<group>";
+		};
+		37D2997A1E54B60500580BC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37D2997B1E54B60500580BC2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3755C6961E4EE66200ABF52E /* NXTCubeResolver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3755C6C41E4EE66200ABF52E /* Build configuration list for PBXNativeTarget "NXTCubeResolver" */;
+			buildPhases = (
+				3755C6931E4EE66200ABF52E /* Sources */,
+				3755C6941E4EE66200ABF52E /* Frameworks */,
+				3755C6951E4EE66200ABF52E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37FA38A71E51D94600560013 /* PBXTargetDependency */,
+			);
+			name = NXTCubeResolver;
+			productName = NXTCubeResolver;
+			productReference = 3755C6971E4EE66200ABF52E /* NXTCubeResolver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3755C6AF1E4EE66200ABF52E /* NXTCubeResolverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3755C6C71E4EE66200ABF52E /* Build configuration list for PBXNativeTarget "NXTCubeResolverTests" */;
+			buildPhases = (
+				3755C6AC1E4EE66200ABF52E /* Sources */,
+				3755C6AD1E4EE66200ABF52E /* Frameworks */,
+				3755C6AE1E4EE66200ABF52E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379F9A441E4F6A5800A7AD3E /* PBXTargetDependency */,
+			);
+			name = NXTCubeResolverTests;
+			productName = NXTCubeResolverTests;
+			productReference = 3755C6B01E4EE66200ABF52E /* NXTCubeResolverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3755C6BA1E4EE66200ABF52E /* NXTCubeResolverUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3755C6CA1E4EE66200ABF52E /* Build configuration list for PBXNativeTarget "NXTCubeResolverUITests" */;
+			buildPhases = (
+				3755C6B71E4EE66200ABF52E /* Sources */,
+				3755C6B81E4EE66200ABF52E /* Frameworks */,
+				3755C6B91E4EE66200ABF52E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3755C6BD1E4EE66200ABF52E /* PBXTargetDependency */,
+			);
+			name = NXTCubeResolverUITests;
+			productName = NXTCubeResolverUITests;
+			productReference = 3755C6BB1E4EE66200ABF52E /* NXTCubeResolverUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		3755C7261E4EECAE00ABF52E /* Two-Phase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3755C72D1E4EECAE00ABF52E /* Build configuration list for PBXNativeTarget "Two-Phase" */;
+			buildPhases = (
+				3755C7231E4EECAE00ABF52E /* Sources */,
+				3755C7241E4EECAE00ABF52E /* Frameworks */,
+				3755C7251E4EECAE00ABF52E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Two-Phase";
+			productName = "Two-Phase";
+			productReference = 3755C7271E4EECAE00ABF52E /* libTwo-Phase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		37D299771E54B60500580BC2 /* BTStackTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37D2998E1E54B60500580BC2 /* Build configuration list for PBXNativeTarget "BTStackTest" */;
+			buildPhases = (
+				37D299741E54B60500580BC2 /* Sources */,
+				37D299751E54B60500580BC2 /* Frameworks */,
+				37D299761E54B60500580BC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTStackTest;
+			productName = BTStackTest;
+			productReference = 37D299781E54B60500580BC2 /* BTStackTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3755C68F1E4EE66200ABF52E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = xelz;
+				TargetAttributes = {
+					3755C6961E4EE66200ABF52E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TXBG7454SA;
+						ProvisioningStyle = Automatic;
+					};
+					3755C6AF1E4EE66200ABF52E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TXBG7454SA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3755C6961E4EE66200ABF52E;
+					};
+					3755C6BA1E4EE66200ABF52E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TXBG7454SA;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3755C6961E4EE66200ABF52E;
+					};
+					3755C7261E4EECAE00ABF52E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TXBG7454SA;
+						ProvisioningStyle = Automatic;
+					};
+					37D299771E54B60500580BC2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TXBG7454SA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3755C6921E4EE66200ABF52E /* Build configuration list for PBXProject "NXTCubeResolver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3755C68E1E4EE66200ABF52E;
+			productRefGroup = 3755C6981E4EE66200ABF52E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3755C6961E4EE66200ABF52E /* NXTCubeResolver */,
+				3755C6AF1E4EE66200ABF52E /* NXTCubeResolverTests */,
+				3755C6BA1E4EE66200ABF52E /* NXTCubeResolverUITests */,
+				3755C7261E4EECAE00ABF52E /* Two-Phase */,
+				37D299771E54B60500580BC2 /* BTStackTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3755C6951E4EE66200ABF52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3755C6AA1E4EE66200ABF52E /* LaunchScreen.storyboard in Resources */,
+				3755C6A71E4EE66200ABF52E /* Assets.xcassets in Resources */,
+				3755C6A51E4EE66200ABF52E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3755C6AE1E4EE66200ABF52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3755C6B91E4EE66200ABF52E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D299761E54B60500580BC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D2998A1E54B60500580BC2 /* LaunchScreen.storyboard in Resources */,
+				37D299871E54B60500580BC2 /* Assets.xcassets in Resources */,
+				37D299851E54B60500580BC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3755C6931E4EE66200ABF52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379016931E57661D003684F2 /* BTDevice.m in Sources */,
+				379016921E5765E5003684F2 /* BTstackManager.m in Sources */,
+				379F9A4A1E4F79C100A7AD3E /* squares.cpp in Sources */,
+				379016911E57535D003684F2 /* BTConnectViewController.mm in Sources */,
+				3755C6A21E4EE66200ABF52E /* ScanViewController.mm in Sources */,
+				3755C69F1E4EE66200ABF52E /* AppDelegate.m in Sources */,
+				3755C69C1E4EE66200ABF52E /* main.m in Sources */,
+				379016991E576B23003684F2 /* Util.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3755C6AC1E4EE66200ABF52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3755C6B51E4EE66200ABF52E /* NXTCubeResolverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3755C6B71E4EE66200ABF52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3755C6C01E4EE66200ABF52E /* NXTCubeResolverUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3755C7231E4EECAE00ABF52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3755C74C1E4EECB600ABF52E /* globals.c in Sources */,
+				3755C74B1E4EECB600ABF52E /* cube.c in Sources */,
+				3755C74F1E4EECB600ABF52E /* phase2.c in Sources */,
+				3755C74D1E4EECB600ABF52E /* permcube.c in Sources */,
+				3755C7501E4EECB600ABF52E /* prntsol.c in Sources */,
+				3755C7511E4EECB600ABF52E /* setcube.c in Sources */,
+				3755C74E1E4EECB600ABF52E /* phase1.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37D299741E54B60500580BC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D299821E54B60500580BC2 /* ViewController.m in Sources */,
+				37D2997F1E54B60500580BC2 /* AppDelegate.m in Sources */,
+				37D2997C1E54B60500580BC2 /* main.m in Sources */,
+				3790168E1E54C5CA003684F2 /* BTDevice.m in Sources */,
+				37D299921E54B76200580BC2 /* BTstackManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3755C6BD1E4EE66200ABF52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3755C6961E4EE66200ABF52E /* NXTCubeResolver */;
+			targetProxy = 3755C6BC1E4EE66200ABF52E /* PBXContainerItemProxy */;
+		};
+		379F9A441E4F6A5800A7AD3E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3755C6961E4EE66200ABF52E /* NXTCubeResolver */;
+			targetProxy = 379F9A431E4F6A5800A7AD3E /* PBXContainerItemProxy */;
+		};
+		37FA38A71E51D94600560013 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3755C7261E4EECAE00ABF52E /* Two-Phase */;
+			targetProxy = 37FA38A61E51D94600560013 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3755C6A31E4EE66200ABF52E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3755C6A41E4EE66200ABF52E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3755C6A81E4EE66200ABF52E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3755C6A91E4EE66200ABF52E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		37D299831E54B60500580BC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37D299841E54B60500580BC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37D299881E54B60500580BC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37D299891E54B60500580BC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3755C6C21E4EE66200ABF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3755C6C31E4EE66200ABF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3755C6C51E4EE66200ABF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NXTCubeResolver",
+				);
+				HEADER_SEARCH_PATHS = (
+					"~/work/tools/ios/btstack/platforms/ios/CocoaTouch/include",
+					"~/work/tools/ios/btstack/include",
+				);
+				INFOPLIST_FILE = NXTCubeResolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NXTCubeResolver",
+					"$(PROJECT_DIR)/BTStackManager",
+					"$(PROJECT_DIR)/BTStackTest",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ming.NXTCubeResolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3755C6C61E4EE66200ABF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NXTCubeResolver",
+				);
+				HEADER_SEARCH_PATHS = (
+					"~/work/tools/ios/btstack/platforms/ios/CocoaTouch/include",
+					"~/work/tools/ios/btstack/include",
+				);
+				INFOPLIST_FILE = NXTCubeResolver/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NXTCubeResolver",
+					"$(PROJECT_DIR)/BTStackManager",
+					"$(PROJECT_DIR)/BTStackTest",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ming.NXTCubeResolver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3755C6C81E4EE66200ABF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				INFOPLIST_FILE = NXTCubeResolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ming.NXTCubeResolverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NXTCubeResolver.app/NXTCubeResolver";
+			};
+			name = Debug;
+		};
+		3755C6C91E4EE66200ABF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				INFOPLIST_FILE = NXTCubeResolverTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ming.NXTCubeResolverTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NXTCubeResolver.app/NXTCubeResolver";
+			};
+			name = Release;
+		};
+		3755C6CB1E4EE66200ABF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				INFOPLIST_FILE = NXTCubeResolverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ming.NXTCubeResolverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NXTCubeResolver;
+			};
+			name = Debug;
+		};
+		3755C6CC1E4EE66200ABF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				INFOPLIST_FILE = NXTCubeResolverUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ming.NXTCubeResolverUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NXTCubeResolver;
+			};
+			name = Release;
+		};
+		3755C72E1E4EECAE00ABF52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3755C72F1E4EECAE00ABF52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		37D2998C1E54B60500580BC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				HEADER_SEARCH_PATHS = (
+					"~/work/tools/ios/btstack/platforms/ios/CocoaTouch/include",
+					"~/work/tools/ios/btstack/include",
+				);
+				INFOPLIST_FILE = BTStackTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BTStackTest",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ming.BTStackTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		37D2998D1E54B60500580BC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TXBG7454SA;
+				HEADER_SEARCH_PATHS = (
+					"~/work/tools/ios/btstack/platforms/ios/CocoaTouch/include",
+					"~/work/tools/ios/btstack/include",
+				);
+				INFOPLIST_FILE = BTStackTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BTStackTest",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.ming.BTStackTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3755C6921E4EE66200ABF52E /* Build configuration list for PBXProject "NXTCubeResolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3755C6C21E4EE66200ABF52E /* Debug */,
+				3755C6C31E4EE66200ABF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3755C6C41E4EE66200ABF52E /* Build configuration list for PBXNativeTarget "NXTCubeResolver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3755C6C51E4EE66200ABF52E /* Debug */,
+				3755C6C61E4EE66200ABF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3755C6C71E4EE66200ABF52E /* Build configuration list for PBXNativeTarget "NXTCubeResolverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3755C6C81E4EE66200ABF52E /* Debug */,
+				3755C6C91E4EE66200ABF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3755C6CA1E4EE66200ABF52E /* Build configuration list for PBXNativeTarget "NXTCubeResolverUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3755C6CB1E4EE66200ABF52E /* Debug */,
+				3755C6CC1E4EE66200ABF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3755C72D1E4EECAE00ABF52E /* Build configuration list for PBXNativeTarget "Two-Phase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3755C72E1E4EECAE00ABF52E /* Debug */,
+				3755C72F1E4EECAE00ABF52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37D2998E1E54B60500580BC2 /* Build configuration list for PBXNativeTarget "BTStackTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37D2998C1E54B60500580BC2 /* Debug */,
+				37D2998D1E54B60500580BC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3755C68F1E4EE66200ABF52E /* Project object */;
+}
